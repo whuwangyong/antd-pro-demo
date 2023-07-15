@@ -1,57 +1,24 @@
-# Ant Design Pro
+# Ant Design Pro Demo
+ 
+基于 antd pro 5，umi@3 completed blocks。效果与 https://preview.pro.ant.design/ 一致。
 
-This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
+## 注意
+使用 node.js 16.20.1。试过更新的18版本，跑不起来。
 
-## Environment Prepare
-
-Install `node_modules`:
-
+## 如何运行
+1. clone 本项目
+2. 准备环境
 ```bash
-npm install
+# 安装cnpm
+npm install cnpm -g --registry=https://registry.npmmirror.com
+# 使用cnpm安装antd-pro和yarn tyarn
+cnpm i @ant-design/pro-cli -g
+cnpm install yarn tyarn -g
+# 切换到工作目录，安装依赖
+cd antd-pro-demo && tyarn
 ```
-
-or
-
+3. 运行
 ```bash
-yarn
+npm run start
 ```
-
-## Provided Scripts
-
-Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
-
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-### Start project
-
-```bash
-npm start
-```
-
-### Build project
-
-```bash
-npm run build
-```
-
-### Check code style
-
-```bash
-npm run lint
-```
-
-You can also use script to auto fix some lint error:
-
-```bash
-npm run lint:fix
-```
-
-### Test code
-
-```bash
-npm test
-```
-
-## More
-
-You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+4. 
